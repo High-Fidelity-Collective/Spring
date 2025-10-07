@@ -2,13 +2,33 @@
 Requires Xcode 10.2 and Swift 5.
 
 ## Installation
-Drop in the Spring folder to your Xcode project (make sure to enable "Copy items if needed" and "Create groups").
 
-Or via CocoaPods:
+### Swift Package Manager (Recommended)
+
+In Xcode, go to `File` → `Add Package Dependencies` and enter:
+
 ```
+https://github.com/MengTo/Spring.git
+```
+
+Or add it to your `Package.swift`:
+
+```swift
+dependencies: [
+    .package(url: "https://github.com/MengTo/Spring.git", from: "1.1.0")
+]
+```
+
+### CocoaPods
+
+```ruby
 use_frameworks!
 pod 'Spring', :git => 'https://github.com/MengTo/Spring.git', :branch => 'swift5'
 ```
+
+### Manual Installation
+
+Drop in the Spring folder to your Xcode project (make sure to enable "Copy items if needed" and "Create groups").
 
 ## Usage with Storyboard
 In Identity Inspector, connect the UIView to SpringView Class and set the animation properties in Attribute Inspector.

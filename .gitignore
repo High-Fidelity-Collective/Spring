@@ -15,3 +15,7 @@ DerivedData
 *.ipa
 *.xcuserstate
 .DS_Store
+
+# Swift Package Manager
+.swiftpm/
+.build/
